@@ -28,7 +28,7 @@ class _InterstitialState extends State<Interstitial> {
 
   Future<void> requestInterstitialAd() async {
     try {
-      _adId = await Tapsell.requestInterstitialAd(LegacyKeys.interstitial) ??
+      _adId = await Tapsell.requestInterstitialAd(TapsellMediationKeys.interstitial) ??
           'Unknown ad id';
     } on PlatformException catch (e) {
       _adId = 'Failed to request ad. Error: ${e.message}';

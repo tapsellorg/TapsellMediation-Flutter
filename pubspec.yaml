@@ -20,6 +20,7 @@ dependencies:
   get: ^4.6.6
 
   tapsell_mediation: ^1.0.2-beta07
+  tapsell_mediation_legacy: ^1.0.2-beta07
   tapsell_mediation_admob: ^1.0.2-beta07
   tapsell_mediation_mintegral: ^1.0.2-beta07
   tapsell_mediation_liftoff: ^1.0.2-beta07

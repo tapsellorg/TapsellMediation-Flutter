@@ -28,7 +28,7 @@ class _BannerState extends State<Banner> {
 
   Future<void> requestBannerAd() async {
     try {
-      _adId = await Tapsell.requestBannerAd(LegacyKeys.banner,
+      _adId = await Tapsell.requestBannerAd(TapsellMediationKeys.banner,
               bannerSize: BannerSize.banner_320_90) ??
           'Unknown ad id';
     } on PlatformException catch (e) {

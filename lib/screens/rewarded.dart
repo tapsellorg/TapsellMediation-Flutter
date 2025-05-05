@@ -28,7 +28,7 @@ class _RewardedState extends State<Rewarded> {
 
   Future<void> requestRewardedAd() async {
     try {
-      _adId = await Tapsell.requestRewardedAd(LegacyKeys.rewarded) ??
+      _adId = await Tapsell.requestRewardedAd(TapsellMediationKeys.rewarded) ??
           'Unknown ad id';
     } on PlatformException catch (e) {
       _adId = 'Failed to request ad. Error: ${e.message}';

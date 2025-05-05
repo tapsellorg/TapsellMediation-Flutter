@@ -33,7 +33,7 @@ class _NativeState extends State<Native> {
   }
 
   void requestNativeAd() {
-    Tapsell.requestNativeAd(LegacyKeys.native).then((adId) {
+    Tapsell.requestNativeAd(TapsellMediationKeys.native).then((adId) {
       _adId = adId!;
       addLog('onSuccess: $adId');
     }).catchError((error) {
